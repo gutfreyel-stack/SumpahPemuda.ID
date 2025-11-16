@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #222;
+}
+
+header {
+  background-color: #4b2e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #ffd700;
+}
+
+.hero, .bio {
+  max-width: 1000px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.profile img, .bio img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.text, .bio-text {
+  flex: 1;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #4b2e1e;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6c4a32;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #8b5e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero, .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img, .bio img {
+    width: 80%;
+  }
+}
